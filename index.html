@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de la Vaca</title>
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 10px #000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c1a8a8;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(102, 152, 112);
+    border: 2px solid #000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vaca {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.cabeza {
+    width: 100px;
+    height: 70px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 40px 40px 25px 25px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+
+.ojo {
+    width: 15px;
+    height: 15px;
+    background-color: #6d4c41;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+}
+
+.ojo.izquierdo {
+    left: 18px;
+}
+
+.ojo.derecho {
+    right: 18px;
+}
+
+.boca {
+    width: 40px;
+    height: 20px;
+    background-color: #ffcccc;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    border: 1px solid #000;
+}
+
+.cuerpo {
+    border-radius: 46px;
+    width: 120px;
+    height: 80px;
+    background-color: #fff;
+    border: 1px solid #000;
+    position: absolute;
+    top: 70px;
+    left: 15px;
+}
+
+.mancha0  {
+    width: 30px;
+    height: 40px;
+    background-color: #6d4c41;
+    border: 0px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+
+.mancha1  {
+    width: 20px;
+    height: 30px;
+    background-color: #6d4c41;
+    border: 0px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 119px;
+    left: 39px;
+}
+
+.mancha2  {
+    width: 20px;
+    height: 30px;
+    background-color: #6d4c41;
+    border: 0px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 112px;
+    left: 107px;
+}
+
+.mancha3  {
+    width: 30px;
+    height: 50px;
+    background-color: #6d4c41;
+    border: 0px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 87px;
+    left: 85px;
+}
+
+.pata {
+    border-radius: 10px;
+    width: 20px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.pata.izquierda {
+    left: 30px;
+    bottom: -40px;
+}
+
+.pata.derecha {
+    right: 30px;
+    bottom: -40px;
+}
+/* Estilo para los cuernos */
+.cuerno {
+    transform: rotate(90deg);
+    width: 35px;
+    height: 10px;
+    background-color: #bcaaa4;
+    border: 1px solid #000; 
+    position: absolute;
+    top: -11px;
+    border-radius: 50% 0 0 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cuerno.izquierdo {
+    left: 10px;
+    transform: rotate(30deg);
+    border-radius: 80% 0 0 80%;
+}
+
+.cuerno.derecho {
+    right: 10px;
+    transform: rotate(-30deg);
+    border-radius: 0 80% 80% 0;
+}
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="vaca">
+            <div class="cabeza">
+                <div class="cuerno izquierdo"></div>
+                <div class="cuerno derecho"></div>
+                <div class="ojo izquierdo"></div>
+                <div class="ojo derecho"></div>
+                <div class="boca"></div>
+            </div>
+            <div class="pata izquierda"></div>
+            <div class="pata derecha"></div>
+            <div class="cuerpo"></div>
+            <div class="mancha0"></div>
+            <div class="mancha1"></div>
+            <div class="mancha2"></div>
+            <div class="mancha3"></div>
+        </div>
+    </div>
+</body>
+</html>
